@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "noLib": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "outDir": "./build"
+  },
+  "files": [
+    "../node_modules/typescript/lib/lib.d.ts",
+    "./typings/index.d.ts",
+    "./src/testSpec.ts"
+  ]
+}

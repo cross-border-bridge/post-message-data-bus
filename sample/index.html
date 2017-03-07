@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>sample</title>
+<style>
+ #child {
+	 width: 400px;
+	 height: 450px;
+ }
+ #output {
+	 background-color: black;
+	 color: white;
+	 width: 400px;
+	 height: 300px;
+ }
+</style>
+<script src="./build/parent-bundle.js"></script>
+</head>
+<body>
+	<table border=0>
+		<tr>
+			<td width=50%>
+				<h3>Send Message</h3>
+					<div class="control">
+						<ul>
+							<li><button id="send1">[dataBus01] 1, 2, 3</button></li>
+							<li><button id="send2">[dataBus01] foo, bar</button></li>
+							<li><button id="send3">[dataBus02] 1, 2, 3</button></li>
+							<li><button id="destroy">destroy</button></li>
+						</ul>
+					</div>
+				<h3>Received Message</h3>
+				<textarea id="received" rows="10" cols="30"></textarea>
+			</td>
+			<td width=50%>
+				<h3>IFrame</h3>
+				<div>
+					<iframe id="child" src="./child.html"></iframe>
+				</div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

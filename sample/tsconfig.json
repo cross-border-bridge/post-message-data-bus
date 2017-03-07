@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "module": "commonjs",
+    "outDir": "./build"
+  },
+  "files": [
+    "./src/parent.ts",
+    "./src/child.ts"
+  ]
+}

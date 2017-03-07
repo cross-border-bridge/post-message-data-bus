@@ -1,0 +1,54 @@
+{
+  "name": "@cross-border-bridge/post-message-data-bus",
+  "version": "2.0.0",
+  "description": "PostMessageDataBus for Web application",
+  "main": "lib/index.js",
+  "scripts": {
+    "prepublish": "gulp clean && gulp install:typings && gulp compile",
+    "start": "npm run build && node bin/run",
+    "build": "gulp compile",
+    "build-sample": "gulp compile:sample",
+    "lint": "gulp lint lint-md",
+    "test": "gulp test lint lint-md"
+  },
+  "author": "DWANGO Co., Ltd.",
+  "license": "MIT",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "del": "~1.1.1",
+    "gulp": "~3.9.1",
+    "gulp-istanbul": "~0.10.4",
+    "gulp-jasmine": "~2.3.0",
+    "gulp-shell": "~0.5.2",
+    "gulp-tslint": "~4.3.5",
+    "jasmine": "~2.1.1",
+    "jasmine-reporters": "~2.0.4",
+    "jasmine-terminal-reporter": "~0.9.1",
+    "mdast": "~2.0.0",
+    "mdast-lint": "~1.1.1",
+    "tslint": "~3.7.4",
+    "typescript": "1.7.5",
+    "typings": "^1.3.0",
+    "webpack": "^1.13.1",
+    "@cross-border-bridge/multiplex-data-bus": "~2.0.0"
+  },
+  "dependencies": {
+    "@cross-border-bridge/data-bus": "~2.0.0"
+  },
+  "typings": "lib/index.d.ts",
+  "keywords": [
+    "cbb", "rpc", "ipc", "bridge", "postMessage", "iframe"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cross-border-bridge/post-message-data-bus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cross-border-bridge/post-message-data-bus/issues"
+  },
+  "homepage": {
+    "url": "https://github.com/cross-border-bridge/post-message-data-bus#readme"
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+	<head>
+		<meta charset="utf-8">
+		<script src="./build/child-bundle.js"></script>
+		<title></title>
+		<style>
+		 body {
+			 background-color: red;
+		 }
+		</style>
+		<script>
+		</script>
+	</head>
+	<body>
+		<h3>Send Message</h3>
+		<ul>
+			<li><button id="send1">[dataBus01] 1, 2, 3</button></li>
+			<li><button id="send2">[dataBus01] foo, bar</button></li>
+			<li><button id="send3">[dataBus02] 1, 2, 3</button></li>
+			<li><button id="destroy">destroy</button></li>
+		</ul>
+		<h3>Received Message</h3>
+		<textarea id="received" rows="10" cols="30"></textarea>
+	</body>
+</html>

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "noLib": false,
+    "noImplicitAny": true,
+    "outDir": "./lib",
+    "declaration": true,
+    "module": "commonjs"
+  },
+  "files": [
+    "./typings/index.d.ts",
+    "./src/index.ts"
+  ]
+}
